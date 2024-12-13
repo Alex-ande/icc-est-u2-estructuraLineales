@@ -67,7 +67,7 @@ public class ContactManager {
     NodoGeneric<Contact<?, ?>> current = contacts.getHead();
     while (current != null) {
       Contact<?, ?>contact = current.getValue();
-      System.out.println("nombre: "+ contact.getName()+"telefono: "+ contact.getPhone());
+      System.out.println("nombre: "+ contact.getName()+", telefono: "+ contact.getPhone());
       current = current.getNext();
     }
   }

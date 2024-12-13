@@ -49,16 +49,16 @@ public class MenuController {
     }
 
     private void addContac (){
-        String name = ConsoleView.getInput("Enter name ");
-        String phone  = ConsoleView.getInput("Enter phone ");
+        String name = ConsoleView.getInput("Enter name: ");
+        String phone  = ConsoleView.getInput("Enter phone: ");
         Contact<String, String> contact = new Contact<>(name,phone);
         contactManager.addContact( contact);
-            ConsoleView.showMessage("contac");
+            ConsoleView.showMessage("contac: ");
        
     }
 
     private void findContac(){
-        String name = ConsoleView.getInput("enter a nem to search");
+        String name = ConsoleView.getInput("enter a name to search");
         Contact<?, ?> contact = contactManager.findContactByName(name);
         if (contact != null) {
             ConsoleView.showMessage("contac foud: "+ contact);
@@ -68,9 +68,9 @@ public class MenuController {
         }
     }
     private void deleteContact (){
-        String name = ConsoleView.getInput("enter a nem to delte");
+        String name = ConsoleView.getInput("enter a name to delete: ");
         contactManager.deleteContactByName(name);
-        ConsoleView.showMessage(name);
+        ConsoleView.showMessage("contact delete");
 
     }
 

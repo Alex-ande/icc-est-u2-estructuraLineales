@@ -4,15 +4,36 @@ import java.util.Stack;
 import Controllers.MenuController;
 import Materia.Stacks.StackGeneric;
 import Models.Pantalla;
+import Materia.Ejercicio_01_sign.Ejercicio01SignValidation;
+import Materia.Ejercicio_02_sorting.Ejercicio02StackSorting;
 import Materia.Queues.*;
 
 public class App {
 
+  
+
+
     public static void main(String[] args) throws Exception {
+ System.out.println("Ejercicio 01: Validación de Signos");
+        String[] testStrings = {"([]){}", "({)}", "[({})]", "(]", ""};
+        for (String s : testStrings) {
+            System.out.println("Input: " + s + " -> Output: " + Ejercicio01SignValidation.esValido(s));
+        }
 
+        // Ejercicio 02: Ordenar un Stack
+        System.out.println("\nEjercicio 02: Ordenar un Stack");
+        Stack<Integer> stack = new Stack<>();
+        stack.push(5);
+        stack.push(1);
+        stack.push(4);
+        stack.push(2);
 
-        MenuController menuController = new MenuController();
-        menuController.showMenu();
+        System.out.println("Antes de ordenar: " + stack);
+        Ejercicio02StackSorting.ordenarStack(stack);
+        System.out.println("Después de ordenar: " + stack);
+
+     //   MenuController menuController = new MenuController();
+      //  menuController.showMenu();
 
         // runStack();
     }
