@@ -1,18 +1,22 @@
-## Getting Started
+# Estructuras Lineales – Ejercicios
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Versión: 2.0.2
+Mensaje de versión: "Estructuras Lineales – Ejercicios"
 
-## Folder Structure
+Este proyecto contiene dos ejercicios implementados con estructuras de datos lineales (pilas). Además, se incluye una clase `App` para centralizar las pruebas.
 
-The workspace contains two folders by default, where:
+### Ejercicios
+1. **Ejercicio 01: Validación de Signos**
+   - Verifica si una cadena con los caracteres `(`, `)`, `{`, `}`, `[`, `]` es válida.
+2. **Ejercicio 02: Ordenar un Stack**
+   - Ordena los elementos de un stack, dejando los más pequeños en el tope.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Uso
+1. Compilar y ejecutar la clase `App` (`src/App.java`).
+2. La salida mostrará los resultados de las pruebas para ambos ejercicios.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Requisitos
+- El proyecto debe estar versionado con Git.
+- La URL del release 2.0.2 debe cargarse en el AVAC.
+- El archivo README.md contiene esta descripción.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
